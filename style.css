@@ -1,7 +1,106 @@
 .titulo{
     background: linear-gradient(to right, #007bff, #6610f2);
     color: white;
-    padding: 50px 10px;
+    padding: 40px 10px;
     text-align: center;
-};
+}
 
+.filtro { 
+    background: linear-gradient(to right, #4a9ef8, #8137f9);
+    width: 80%;
+    max-width: 1000px;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    margin: auto;
+}
+
+.barrapesquisa {
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 80%;
+    max-width: 600px;
+    align-content: start;
+}
+
+.pesquisa {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 20px 0 0 20px;
+}
+
+.botao {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.data_ida, .data_volta {
+    display: flex;
+    background: white;
+    width: 80%;
+    max-width: 290px;
+    padding: 5px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="date"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.textinho{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.textinho h2 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+}
+.rodape{
+    background-color: black;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+
+}
+/*apagar depois, só para separar o rodapé*/
+.section2{
+    height: 480px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
