@@ -17,3 +17,12 @@ function mudarFrase() {
 }
 
 setInterval(mudarFrase, 10000);
+
+
+document.getElementById("login").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const username = document.getElementById("username").value;
+    
+    localStorage.setItem("username", username);
+    window.location.href = "destinos.html";
+});

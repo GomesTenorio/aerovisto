@@ -5,12 +5,47 @@
     text-align: center;
 }
 
+.rodape{
+    background-color: black;
+    justify-content: center;
+    padding: 8px;
+    width: 100%;
+    display: flex;
+
+}
+
+.carousel img {
+    max-height: 800px;
+    object-fit: cover;
+}
+
+.carousel {
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    .nav-item {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+/** Css para pagina de destinos**/
+
 .filtro { 
     background: linear-gradient(to right, #4a9ef8, #8137f9);
     width: 80%;
     max-width: 1000px;
-    padding: 10px;
-    height: 200px;
+    padding: 15px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +61,7 @@
     width: 80%;
     max-width: 600px;
     align-content: start;
+    
 }
 
 .pesquisa {
@@ -87,20 +123,119 @@ input[type="date"] {
     text-transform: uppercase;
     font-family: 'Arial', sans-serif;
 }
-.rodape{
-    background-color: black;
-    justify-content: center;
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    position: fixed;
 
-}
-/*apagar depois, só para separar o rodapé*/
-.section2{
-    height: 480px;
-    margin: 0;
+/** Css para pagina de login **/
+
+.login-wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 86vh;
+    background-color: #fafdff;
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    height: 400px;
+}
+
+.login-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #4a9ef8, #8137f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.btn-login {
+    width: 100%;
+    background: linear-gradient(to right, #4a9ef8, #8137f9);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-login:hover {
+    background: linear-gradient(to right, #398ae1, #6e2bdb);
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #398ae1;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/**Css da pagina sobre o site */
+
+.sobre-nos {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.sobre-nos h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4e54c8;
+}
+
+.sobre-nos h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.sobre-nos p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.sobre-nos img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nos .btn-primary {
+    background: linear-gradient(to right, #4a9ef8, #8137f9);
+    border-color: #4e54c8;
+}
+
+.sobre-nos .btn-primary:hover {
+    background: linear-gradient(to right, #398ae1, #6e2bdb);
+    border-color: #3d43a2;
 }
