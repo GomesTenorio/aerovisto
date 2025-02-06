@@ -14,7 +14,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style_contato.css">
     <title>AEROVISTO 🛫</title>
 
 </head>
@@ -43,34 +43,35 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col"><h2>Nossos Canais de Atendimento</h2></div>
-        </div>
-        <div class="row">
-            <div class="col"><strong>Telefone:</strong> 0800 123 4567</div>
-        </div>
-        <div class="row">
-            <div class="col"><strong>Email:</strong> <a href="mailto:voudeaerovisto@aerovisto.com.br">voudeaerovisto@aerovisto.com.br</a></div>
-        </div>
-        
-    <div class="container mt-5">
-        <h2>Entre em Contato</h2>
+    <div class="container">
+        <h2 class="gradient-text">Nossos Canais de Atendimento</h2>
+
+        <div class="contato-info"><strong>📞 Telefone:&nbsp;</strong> 0800 123 4567</div>
+        <div class="contato-info"><strong>💬 Whatsapp:&nbsp;</strong> (82) 1 9999-9999</div>
+        <div class="contato-info"><strong>📧 Email:&nbsp;</strong> <a href="mailto:voudeaerovisto@aerovisto.com.br">voudeaerovisto@aerovisto.com.br</a></div>
+    </div>
+
+    <div class="container">
+        <h2 class="gradient-text">Entre em Contato</h2>
         <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+        
         <form>
-            <div class="mb-3">
-                <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+
+        <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Seu nome" required>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
             </div>
-            <div class="mb-3">
-                <label for="mensagem" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+
+            <button class="btn btn-primary" type="submit">Enviar</button>
+
         </form>
     </div>
 </body>
