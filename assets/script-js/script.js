@@ -19,6 +19,8 @@ function mudarFrase() {
 setInterval(mudarFrase, 10000);
 
 
+//função para armazenar informação de login temporariamente e direcionar para destinos após login
+
 document.getElementById("login").addEventListener("submit", function(event) {
     event.preventDefault();
     const username = document.getElementById("username").value;

@@ -1,0 +1,57 @@
+/*Css do index*/
+
+.titulo{
+    background: linear-gradient(to right, #007bff, #6610f2);
+    color: white;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.rodape{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    border-radius: 2px;
+}
+
+.carousel img {
+    max-height: 850px;
+    object-fit: cover;
+}
+
+.carousel {
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: auto;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    .nav-item {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
